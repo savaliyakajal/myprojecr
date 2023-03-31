@@ -23,9 +23,7 @@ function Header(props) {
   // }, [nav]);
   // user[0].admin?console.log("-----true---------")
   // :
-  // console.log("-----admin---------", user.admin);
-  // console.log("-----user---------", user.user);
-  // console.log("-----false---------", setUser);
+ 
   console.log("-----admin---------", user.admin);
   console.log("-----user---------", user.user);
   console.log("-----false---------", setUser);
