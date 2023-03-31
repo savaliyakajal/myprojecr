@@ -8,7 +8,7 @@ import App from "../App";
 // setLoginuser({...loginuser,registra:{data}})
 function Login(props) {
   const Navigate = useNavigate();
-  console.log(email);
+  // console.log(email);
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
