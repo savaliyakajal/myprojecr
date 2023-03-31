@@ -11,6 +11,7 @@ function Hookmemo(props) {
     <>
       conute:{conute}
       <button onClick={Increment}>+</button>
+      <button onClick={Increment}>+</button>
       <h1>calciletion </h1>
       {calciletion}
     </>
