@@ -51,10 +51,8 @@ function Registration() {
           toast.success("you aer secceefuly register!", {
             position: toast.POSITION.Top_right,
           });
-         
         }
         Nvigate("/Login");
-       
       } else {
         toast.error("password ans cpassword is not mach", {
           position: toast.POSITION.Top_RIGHT,
@@ -64,7 +62,7 @@ function Registration() {
       }
     } else {
       toast.error("this field is required", {
-        position: toast.POSITION.Top_right ,
+        position: toast.POSITION.Top_right,
       });
       // <Alert variant="danger">this field is required</Alert>;
       // alert("this field is required");
@@ -137,7 +135,7 @@ function Registration() {
                           name="email"
                           placeholder="Enter email"
                           required
-                            // pattern="/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/i"
+                          // pattern="/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/i"
                           onChange={(event) => setEmail(event.target.value)}
                         />
                       </Form.Group>

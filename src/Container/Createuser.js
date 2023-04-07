@@ -67,7 +67,7 @@ function Createuser(id) {
       },
       body: JSON.stringify(data),
     });
-   
+
     // .then((response) => response.json())
     // .then((response) => {
     //   console.log(response);
@@ -88,7 +88,6 @@ function Createuser(id) {
   return (
     <Row className="vh-100 d-flex justify-content-center align-items-center">
       <Col md={8} lg={6} xs={12}>
-    
         <Card className="px-4">
           <Card.Body>
             <div className="mb-3 mt-md-4">
@@ -129,8 +128,8 @@ function Createuser(id) {
                       {" "}
                       title
                     </label>
-               
-                    <select  {...register("title", )} >
+
+                    <select {...register("title")}>
                       <option value="ms">ms</option>
                       <option value="miss">miss</option>
                       <option value="mrs">mrs</option>
@@ -146,12 +145,11 @@ function Createuser(id) {
                       {" "}
                       Gender
                     </label>
-               
-                    <select  {...register("Gender", )} >
+
+                    <select {...register("Gender")}>
                       <option value="male">male</option>
                       <option value="Female">Female</option>
                       <option value="othre">othre</option>
-                     
                     </select>
                   </div>
                   {errors.title && (
@@ -185,7 +183,7 @@ function Createuser(id) {
                       type="file"
                       onChange={uploadPicture}
                     />
-                  
+
                     {imageUrl && (
                       <div>
                         <div>Image Preview:</div>
