@@ -19,10 +19,12 @@ function Login(props) {
     let user = registerdata.find((user) => user.email === userdata.email);
     // console.log(user.email === userdata.email);
 
-    if (userdata.password === user.password) { 
-      if (userdata.email === "kajal123@gmail.com" && userdata.password === "Kajal@123") {
+    if (userdata.password === user.password) {
+      if (
+        userdata.email === "kajal123@gmail.com" &&
+        userdata.password === "Kajal@123"
+      ) {
         localStorage.setItem("Admin", "yes");
-      
       }
       toast.success("you aer secceefuly register!", {
         position: toast.POSITION.Top_right,
@@ -31,9 +33,9 @@ function Login(props) {
       localStorage.setItem("Loginuser", JSON.stringify(userdata));
     }
   };
-   const Registration= ()=>{
+  const Registration = () => {
     Navigate("/Registration");
-   }
+  };
   return (
     <>
       <div>
@@ -90,7 +92,11 @@ function Login(props) {
                       <div className="mt-3">
                         <p className="mb-0  text-center">
                           Already have an account??{" "}
-                          <button type="submit" onClick={Registration} className="text-primary fw-bold">
+                          <button
+                            type="submit"
+                            onClick={Registration}
+                            className="text-primary fw-bold"
+                          >
                             Sign Up
                           </button>
                         </p>
@@ -108,4 +114,3 @@ function Login(props) {
 }
 
 export default Login;
-
